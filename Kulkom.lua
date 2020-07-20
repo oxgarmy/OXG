@@ -136,6 +136,17 @@ return config
 end 
 _redis = load_redis()  
 --------------------------------------------------------------------------------------------------------------
+print([[
+╔╦╗──────╔╗────────
+║╔╝╔╦╗╔╗─║╠╗╔═╗╔══╗
+║╚╗║║║║╚╗║═╣║╬║║║║║
+╚╩╝╚═╝╚═╝╚╩╝╚═╝╚╩╩╝
+───────────────────
+
+> CH › @Kulkom
+> CH › @HH02HH
+~> DEVELOPER › @KulkomBOT
+]])
 sudos = dofile("./Info.lua") 
 SUDO = tonumber(sudos.SUDO)
 sudo_users = {SUDO}
