@@ -978,7 +978,7 @@ end
 if text == 'تحديث السورس ✸' and SudoBot(msg) then 
 os.execute('rm -rf Kulkom.lua')
 os.execute('wget https://raw.githubusercontent.com/TeAmKulkom/Kulkom/master/Kulkom.lua')
-send(msg.chat_id_, msg.id_,' ✸∫ تم تحديث السورس \n ✸∫ لديك اخر اصدار لسورس بويكا\n ✸∫ الاصدار » { 1.3v}')
+send(msg.chat_id_, msg.id_,' ✸∫ تم تحديث السورس \n ✸∫ لديك اخر اصدار لسورس كالكوم\n ✸∫ الاصدار » { 1.3v}')
 dofile('Kulkom.lua')  
 end
 if text == 'الاصدار ✸' and SudoBot(msg) then 
@@ -2223,7 +2223,7 @@ return false
 end
 os.execute('rm -rf Kulkom.lua')
 os.execute('wget https://raw.githubusercontent.com/TeAmKulkom/Kulkom/master/Kulkom.lua')
-send(msg.chat_id_, msg.id_,' ✸∫ تم تحديث السورس \n ✸∫ لديك اخر اصدار لسورس بويكا\n ✸∫ الاصدار » { 1.3v}')
+send(msg.chat_id_, msg.id_,' ✸∫ تم تحديث السورس \n ✸∫ لديك اخر اصدار لسورس كالكوم\n ✸∫ الاصدار » { 1.3v}')
 dofile('Kulkom.lua')  
 end
 
@@ -3377,7 +3377,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n ✸∫ اهلا بك في متجر ملفات بويكا\n ✸∫ ملفات السورس ↓\n≪━━━━━━━━━━━━━≫\n\n"
+local TextS = "\n ✸∫ اهلا بك في متجر ملفات كالكوم\n ✸∫ ملفات السورس ↓\n≪━━━━━━━━━━━━━≫\n\n"
 local TextE = "\n≪━━━━━━━━━━━━━≫\n ✸∫ علامة تعني { ✓ } ملف مفعل\n ✸∫ علامة تعني { ✘ } ملف معطل\n ✸∫ قناة سورس كالكوم↓\n".." ✸∫ [اضغط هنا لدخول](t.me/Kulkom) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -7845,8 +7845,8 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'بويكا').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+if text == ""..(database:get(bot_id..'Name:Bot') or 'كالكوم').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'كالكوم')
 local Kulkom_Msg = {
 'عمغي 🥺💕.',
 'هاا شتريد كافي ☹️.',
@@ -8428,7 +8428,7 @@ end
 end
 end
 -------------------------------
-if text == ""..(database:get(bot_id..'Name:Bot') or 'بويكا').." غادر" or text == 'بوت غادر' then  
+if text == ""..(database:get(bot_id..'Name:Bot') or 'كالكوم').." غادر" or text == 'بوت غادر' then  
 if Sudo(msg) and not database:get(bot_id..'Left:Bot'..msg.chat_id_)  then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,' ✸∫ تم مغادرة الكروب') 
@@ -8437,7 +8437,7 @@ end
 return false  
 end
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+Namebot = (database:get(bot_id..'Name:Bot') or 'كالكوم')
 send(msg.chat_id_, msg.id_,'اسمي الكيوت ['..Namebot..'] ')
 end
 if text == 'الاحصائيات' then
@@ -9597,7 +9597,7 @@ Text = [[
 *✸م9 ◂ اوامر مطور الاساسي* 
 *✸م10 ◂ اوامر الاعضاء*
 ٴ≪━━━━━━𝘽𝙆━━━━━━≫ٴ
-彡 .[𝘉𝘖𝘠𝘒𝘈 𝘊𝘩𝘢𝘯𝘯𝘦𝘭](t.me/Kulkom)➢ 
+彡 .[Kulkom 𝘊𝘩𝘢𝘯𝘯𝘦𝘭](t.me/Kulkom)➢ 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9734,7 +9734,7 @@ if (text and text == "تفعيل اوامر التحشيش") then
 send(msg.chat_id_, msg.id_, '  ✸∫ تم تفعيل اوامر التحشيش')
 database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+local Name_Bot = (database:get(bot_id..'Name:Bot') or 'كالكوم')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
